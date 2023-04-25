@@ -1,5 +1,10 @@
 body {
-  background-color: white;
+  background-color: red;
+}
+
+header {
+ height:20em;
+  background-color: blue;
 }
 
 .title {
