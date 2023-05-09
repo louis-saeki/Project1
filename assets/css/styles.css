@@ -9,12 +9,11 @@ header {
 }
 
 .title {
-  color: gold;
-  //background-color: black;
+  color: yellow;
   text-align: center;
   font-size:30px;
 }
 
 .profile {
-  width: 10em;
+  width: 10 em;
 }
