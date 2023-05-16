@@ -19,5 +19,6 @@ header {
   max-width: 500px;
   
   img {
+    width: auto;
   }
 }
