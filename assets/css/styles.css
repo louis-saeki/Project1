@@ -8,12 +8,13 @@ header {
   background-color: #05282e;
 }
 
-.title {senter
+.title {
   color: yellow;
   text-align: center;
   font-size:30px;
 }
 
 .profile {
+  text-align: center;
   width: 500px;
 }
