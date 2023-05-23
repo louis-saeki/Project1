@@ -5,11 +5,11 @@ body {
 
 header {
  height:10em;
-  background-color: #05282e;
+  background-color: #333333;
 }
 
 .title {
-  color: yellow;
+  color: #ffffff;
   text-align:left ;
   font-size:30px;
 }
