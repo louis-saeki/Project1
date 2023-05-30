@@ -41,3 +41,7 @@ header nav a {
  max-width: 500px;
  width: auto;
 }
+
+.likes-container ol {
+    padding-left: 1.8em;
+}
