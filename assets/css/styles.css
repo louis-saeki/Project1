@@ -42,6 +42,16 @@ header nav a {
  width: auto;
 }
 
+.likes-container {
+    margin: 2em;
+    display: block;
+    padding: 1.8em;
+    border-color: #333333 ;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 20px;
+}
+
 .likes-container ol {
     padding-left: 1.8em;
 }
