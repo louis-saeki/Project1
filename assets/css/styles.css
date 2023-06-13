@@ -56,3 +56,26 @@ header nav a {
 .likes-container ol {
     padding-left: 1.8em;
 }
+
+
+table.my-table {
+    width: 100%;
+    background-color: #ffffff;
+    border-collapse: collapse;
+    border-width: 2px;
+    border-color: #ffcc00;
+    border-style: solid;
+    color: #000000;
+}
+
+table.my-table td, table.GeneratedTable th {
+    border-width: 2px;
+    border-color: #ffcc00;
+    border-style: solid;
+    padding: 3px;
+}
+
+table.my-table thead {
+    background-color: #ffcc00;
+}
+
