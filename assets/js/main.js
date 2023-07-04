@@ -81,7 +81,7 @@ function updateTable(tableId, type) {
         total3 = val3 / input;
     }
 
-     /* update calc values
+     /* update calc values */
     el.rows[1].cells[2].innerText = total1.toString();
     el.rows[2].cells[2].innerText = total2.toString();
     el.rows[3].cells[2].innerText = total3.toString();
