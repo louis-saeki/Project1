@@ -38,40 +38,50 @@ function updateTable2() {
 
 
 function updateTable(tableId, type) {
+    /* get input value */
     const input = parseInt(document.getElementById(`${tableId}-input`).value);
-    const el = document.getElementById(tableId);
-    const val1 = parseInt(el.rows[1].cells[1].innerHTML);
-    const val2 = parseInt(el.rows[2].cells[1].innerHTML);
-    const val3 = parseInt(el.rows[3].cells[1].innerHTML);
 
+    /* get table element */
+    const el = document.getElementById(tableId);
+
+     /* get table column 2 values */
+    const val1 = parseInt(el.rows[1].cells[2].innerHTML);
+    const val2 = parseInt(el.rows[2].cells[2].innerHTML);
+    const val3 = parseInt(el.rows[3].cells[2].innerHTML);
+    
     let total1 = val1;
     let total2 = val2;
     let total3 = val3;
 
+     /* calc multiply */
     if(type === 'multiply') {
         total1 = val1 * input;
         total2 = val2 * input;
         total3 = val3 * input;
     }
 
+     /* calc add */
     if(type === 'add') {
         total1 = val1 + input;
         total2 = val2 + input;
         total3 = val3 + input;
     }
 
+     /* calc subtract */
     if(type === 'subtract') {
         total1 = val1 - input;
         total2 = val2 - input;
         total3 = val3 - input;
     }
 
+     /* calc divide */
     if(type === 'divide') {
         total1 = val1 / input;
         total2 = val2 / input;
         total3 = val3 / input;
     }
 
+     /* update calc values
     el.rows[1].cells[2].innerText = total1.toString();
     el.rows[2].cells[2].innerText = total2.toString();
     el.rows[3].cells[2].innerText = total3.toString();
