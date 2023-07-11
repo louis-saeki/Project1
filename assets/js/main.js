@@ -47,7 +47,7 @@ function updateTable(tableId, type) {
     // loop over table rows
     for(let i=1; i < el.rows.length; i++){
         let nextTotal;
-        const currentTotal = parseInt(el.rows.[i].cells[2].innerHTML);
+        const currentTotal = parseInt(el.rows[i].cells[2].innerHTML);
         if(type === 'multiply'){
             nextTotal = currentTotal * input;
         }
