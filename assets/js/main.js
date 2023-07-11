@@ -56,7 +56,7 @@ function updateTable(tableId, type) {
         // ToDo add code for subtract, mulply, add
         
         // append row total
-        el.rows[i].cells[2].innerHTML = nextTotal.tostring();
+        el.rows[i].cells[2].innerHTML = nextTotal.toString();
     }   
 }
 
