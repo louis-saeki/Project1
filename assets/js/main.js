@@ -44,7 +44,28 @@ function updateTable(tableId, type) {
     /* get table element */
     const el = document.getElementById(tableId);
 
-     /* get table column 2 values */
+    // loop over table rows
+    for(let i=1; i < el.rows.length; i++){
+        let nextTotal;
+        const currentTotal = parseInt(el.rows.[i].cells[2].innerHTML);
+        if(type === 'multiply'){
+            nextTotal = currentTotal * input;
+        }
+
+        // HW here
+        // ToDo add code for subtract, mulply, add
+        
+        // append row total
+        el.rows[i].cells[2].innerHTML = nextTotal.tostring();
+    }   
+}
+
+
+//old code
+
+const old = () => {
+
+ /* get table column 2 values */
     const val1 = parseInt(el.rows[1].cells[2].innerHTML);
     const val2 = parseInt(el.rows[2].cells[2].innerHTML);
     const val3 = parseInt(el.rows[3].cells[2].innerHTML);
@@ -86,4 +107,3 @@ function updateTable(tableId, type) {
     el.rows[2].cells[2].innerText = total2.toString();
     el.rows[3].cells[2].innerText = total3.toString();
 }
-
