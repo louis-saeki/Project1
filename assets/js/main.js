@@ -45,6 +45,11 @@ function addTableRow(tableId) {
     row.insertCell(2).innerHTML = document.getElementById(`${tableId}-input-value`).value.toString();
 }
 
+function deleteTableRow(event) {
+    const row = event.parentNode.parentNode;
+    row.removeChild(row);
+}
+
 function updateTable(tableId, type) {
     /* get input value */
     const input = parseInt(document.getElementById(`${tableId}-input`).value);
