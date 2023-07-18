@@ -36,6 +36,14 @@ function updateTable2() {
     el.rows[3].cells[2].innerText = total3.toString();
 }
 
+function addTableRow(tableId) {
+    /* get table element */
+    const el = document.getElementById(tableId);
+    const row = el.insertRow(el.rows.length -1);
+    row.insertCell(0).innerHTML = document.getElementById(`${tableId}-input-name`).value.toString();
+    row.insertCell(1).innerHTML = document.getElementById(`${tableId}-input-value`).value.toString();
+    row.insertCell(2).innerHTML = document.getElementById(`${tableId}-input-value`).value.toString();
+}
 
 function updateTable(tableId, type) {
     /* get input value */
