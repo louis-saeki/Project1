@@ -99,21 +99,21 @@ const old = () => {
         total3 = val3 * input;
     }
 
-     /+ calc add +/
+     /* calc add */
     if(type === 'add') {
         total1 = val1 + input;
         total2 = val2 + input;
         total3 = val3 + input;
     }
 
-     /- calc subtract -/
+     /* calc subtract */
     if(type === 'subtract') {
         total1 = val1 - input;
         total2 = val2 - input;
         total3 = val3 - input;
     }
 
-     / calc divide /
+     /* calc divide */
     if(type === 'divide') {
         total1 = val1 / input;
         total2 = val2 / input;
