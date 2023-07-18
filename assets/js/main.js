@@ -51,9 +51,19 @@ function updateTable(tableId, type) {
         if(type === 'multiply'){
             nextTotal = currentTotal * input;
         }
-
         // HW here
         // ToDo add code for subtract, mulply, add
+        if(type === 'add'){
+            nextTotal = currentTotal + input;
+        }
+         if(type === 'subtract'){
+            nextTotal = currentTotal - input;
+        }
+        if(type === 'divide'){
+            nextTotal = currentTotal / input;
+        }
+
+       
         
         // append row total
         el.rows[i].cells[2].innerHTML = nextTotal.toString();
