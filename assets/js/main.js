@@ -46,8 +46,8 @@ function addTableRow(tableId) {
 }
 
 function deleteTableRow(event) {
-    const row = event.parentNode.parentNode;
-    row.removeChild(row);
+    const row = event.parentNode;
+    row.parentNode.removeChild(row);
 }
 
 function updateTable(tableId, type) {
