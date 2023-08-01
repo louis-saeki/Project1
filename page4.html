@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Table</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header>
+       <div class="title">Louis George Saeki</div>
+       <nav>
+         <a href="./index.html">Page 1</a>
+         <a href="./page2.html">Page 2</a>
+         <a href="./page3.html">Page 3</a>  
+         </nav>
+    </header>
+    <main>
+    
+        <div class="likes-container">
+            <h3>My Table</h3>
+            <div class="table-input-box">
+                <span>Power:</span>
+                <input id="userInput" type="text" placeholder="your value..." value="1">
+                <button onclick="updateTable()">Update</button>
+            </div>
+
+            <br>
+
+            <table id="table1" class="my-table">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Hp</th>
+                    <th>Atack</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr id="wither">
+                    <td> wither</td>
+                    <td id="r1c2-value">150</td>
+                    <td>4</td>
+                </tr>
+                <tr id="ender dragon">
+                    <td>ender dragon</td>
+                    <td id="r2c2-value">100</td>
+                    <td>5</td>
+                </tr>
+                <tr id="cartoon cat">
+                    <td>cartoon cat</td>
+                    <td id="r3c2-value">99999999</td>
+                    <td>99</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+         <div class="likes-container">
+            <h3>My Table 2</h3>
+            <div class="table-input-box">
+                <span>Add:</span>
+                <input id="table2-input" type="text" placeholder="your value..." value="1">
+                <button onclick="updateTable('table2', 'add')">[+] Add</button>
+                <button onclick="updateTable('table2', 'subtract')">[-] Subtract</button>
+                <button onclick="updateTable('table2', 'multiply')">[*] Multiple</button>
+                <button onclick="updateTable('table2', 'divide')">[/] Divide</button>
+            </div>
+
+            <br>
+
+            <table id="table2" class="my-table">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Hp</th>
+                    <th>Diffens</th>
+                    <th>Actions</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr id="hugywugy">
+                    <td>hugywugy</td>
+                    <td id="r1c2-value">1000</td>
+                    <td>300</td>
+                    <td>
+                        <button onclick="deleteTableRow(this)">Delete</button>
+                    </td>
+                    
+                </tr>
+                <tr id="silent head">
+                    <td>silent head</td>
+                    <td id="r2c2-value">500</td>
+                    <td>555</td>
+                    <td>
+                        <button onclick="deleteTableRow(this)">Delete</button>
+                    </td>
+                </tr>
+                <tr id="super man">
+                    <td>Super man</td>
+                    <td id="r3c2-value">50</td>
+                    <td>30</td>
+                     <td>
+                        <button onclick="deleteTableRow(this)">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input id="table2-input-name" type="text" placeholder="your name..." value="">
+                    </td>
+                    <td>
+                        <input id="table2-input-value" type="text" placeholder="your value..." value="1">
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                        <button onclick="addTableRow('table2')">+ Add row </button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+     </main>
+     <footer>
+     </footer>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
