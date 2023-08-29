@@ -1,5 +1,5 @@
 const loginButton = document.getElementById("login-form-submit");
-4loginButton.addEventListener("click", (e) => {
+loginButton.addEventListener("click", (e) => {
   e.preventDefault();
   const loginForm = document.getElementById("login-form");
   const loginErrorMsgHolder = document.getElementById("login-error-msg-holder");
