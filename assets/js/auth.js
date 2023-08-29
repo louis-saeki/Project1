@@ -4,7 +4,7 @@ loginButton.addEventListener("click", (e) => {
   const loginForm = document.getElementById("login-form");
   const loginErrorMsgHolder = document.getElementById("login-error-msg-holder");
   const username = loginForm.username.value;
-  const password = loginForm.password.vaue;
+  const password = loginForm.password.value;
 
   if (username === "user" && password === "password") {
     alert("You have successfully logged in.")
