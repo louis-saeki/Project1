@@ -13,4 +13,4 @@ loginButton.addEventListener("click", (e) => {
     alert("Invalid username or password!");
     loginErrorMsgHolder.style.display = "block";
   }
-}
+})
