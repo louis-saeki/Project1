@@ -6,7 +6,7 @@ loginButton.addEventListener("click", (e) => {
   const username = loginForm.username.value;
   const password = loginForm.password.value;
 
-  if (username === "user" && password === "password") {
+  if (username === "Louis master" && password === "baseball game master") {
     alert("You have successfully logged in.")
     location.reload();
   } else {
