@@ -120,5 +120,13 @@ table.my-table thead {
 }
 
 .grid-box {
+ <div class = "grid-container">
+   <div class = "grid-box">
+   Box1
+ </div>
+ <div class = "grid-box">
+ Box2
+ </div>
+ </div>
  
 }
