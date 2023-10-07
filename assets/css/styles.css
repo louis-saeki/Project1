@@ -36,8 +36,6 @@ header nav a {
 
 .profile {
   position: relative;
-  text-align: center;
-
 }
 
 .row-one {
@@ -123,20 +121,4 @@ table.my-table thead {
 .login #login-error-msg-holder {
  display: none;
  color: red;
-}
-
-.grid-container {
- 
-}
-
-.grid-box {
- <div class = "grid-container">
-   <div class = "grid-box">
-   Box1
- </div>
- <div class = "grid-box">
- Box2
- </div>
- </div>
- 
 }
